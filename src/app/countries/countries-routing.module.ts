@@ -21,6 +21,11 @@ const routes: Routes = [
     path: 'by/:id', // argumento dinamico
     component: ByCountryPageComponent
   },
+  // Routing para ruta por defecto.
+  {
+    path: '**',
+    redirectTo: 'by-capital'
+  }
 ];
 
 @NgModule({

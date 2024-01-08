@@ -5,6 +5,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from './pages/contact-page/contact-page.component';
+import { ShearchBoxComponent } from './components/shearch-box/shearch-box.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ContactComponent } from './pages/contact-page/contact-page.component';
     HomePageComponent,
     AboutPageComponent,
     SidebarComponent,
-    ContactComponent
+    ContactComponent,
+    ShearchBoxComponent
   ],
   imports: [
     CommonModule,
@@ -23,6 +25,7 @@ import { ContactComponent } from './pages/contact-page/contact-page.component';
     AboutPageComponent,
     SidebarComponent,
     ContactComponent,
+    ShearchBoxComponent,
   ]
 })
 export class SharedModule { }
