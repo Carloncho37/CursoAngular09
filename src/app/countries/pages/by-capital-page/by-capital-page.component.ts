@@ -14,16 +14,13 @@ export class ByCapitalPageComponent {
 
   public countries: Country[] = [];
 
-  constructor ( private countriesService: CountriesService ) {};
+  constructor(private countriesService: CountriesService) { };
 
-  searchByCapital ( term: string):void {
-    this.countriesService.searchCapital( term )
-      .subscribe( countries=> {
+  searchByCapital(term: string): void {
+    this.countriesService.searchCapital(term)
+      .subscribe(countries => {
         this.countries = countries;
       });
-
-    console.log('desde byCapitalPage');
-    console.log( {term} );
   }
 
 

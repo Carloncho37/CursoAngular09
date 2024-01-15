@@ -3,6 +3,7 @@ import { Router, RouterModule, Routes } from '@angular/router';
 import { ByCapitalPageComponent } from './pages/by-capital-page/by-capital-page.component';
 import { ByCountryPageComponent } from './pages/by-country-page/by-country-page.component';
 import { ByRegionPageComponent } from './pages/by-region-page/by-region-page.component';
+import { CountryPageComponent } from './pages/country-page/country-page.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: 'by/:id', // argumento dinamico
-    component: ByCountryPageComponent
+    component: CountryPageComponent
   },
   // Routing para ruta por defecto.
   {

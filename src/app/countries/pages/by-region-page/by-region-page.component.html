@@ -1,1 +1,24 @@
-<p>by-region-page works!</p>
+<h2> Por region </h2>
+<hr>
+
+<!-- el tag onValue, usa el metodo de la clase y recibe el $event para que sea dinamico -->
+<div class="row">
+  <div class="col">
+    <!-- searchbox -->
+    <shared-shearch-box
+    (onValue)="searchByRegion($event)"
+    placeholder="Buscar por region"
+    >
+  </shared-shearch-box>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <countries-table [countries]="countries">
+    </countries-table>
+
+  </div>
+</div>

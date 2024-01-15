@@ -1,1 +1,24 @@
-<p>by-country-page works!</p>
+<h2> Por Pais </h2>
+<hr>
+
+<!-- el tag onValue, usa el metodo de la clase y recibe el $event para que sea dinamico -->
+<div class="row">
+  <div class="col">
+    <!-- searchbox -->
+    <shared-shearch-box
+    (onValue)="searchByCountry($event)"
+    placeholder="Buscar por Pais"
+    >
+  </shared-shearch-box>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <countries-table [countries]="countries">
+    </countries-table>
+
+  </div>
+</div>
