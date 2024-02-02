@@ -10,6 +10,7 @@ import { Country } from '../../interfaces/country';
   }`
   ]
 })
+
 export class CountryTableComponent {
 
   @Input()

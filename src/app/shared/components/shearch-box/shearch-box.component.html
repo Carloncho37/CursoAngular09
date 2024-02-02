@@ -1,10 +1,14 @@
 <!-- el tag keyup.enter llama al metodo que ya definimos en la clase
   y busco con .value el valor de la propiedad de la clase -->
-<input
+
+
+  <!-- (keyup.enter)="emitValue(txtInput.value)" -->
+  <input
 type="text"
-[placeholder]="placeholder"
 class="form-control"
-(keyup.enter)="emitValue(txtInput.value)"
+[placeholder]="placeholder"
+[value]="initialValue"
+(keyup)="onKeyPress(txtInput.value)"
 #txtInput
 >
 

@@ -6,7 +6,8 @@
   <div class="col">
     <!-- searchbox -->
     <shared-shearch-box
-    (onValue)="searchByCountry($event)"
+    (onDebounce)="searchByCountry($event)"
+    [initialValue]="initialValue"
     placeholder="Buscar por Pais"
     >
   </shared-shearch-box>
